@@ -1,0 +1,27 @@
+# Setup Documentation for ASU-IDI
+
+## Purpose
+This repository is for documenting the different installations or implementations that have been performed in the ASU-IDI lab. The documents can vary from being installation guides to being usage or even maintainince guides. A more detailed document is always preferred, and in the future a standard template for all standard documents will be linked right here.
+
+## Tree
+Every documentation will have a parent folder that will classify it into its respective application. For example, the RocksDB folder can detail on the installation of rocksdb with different plugins or with java. The HDFS folder can have the installation and usage of HDFS instances and systems. 
+
+An example tree structure of the above:
+```
+Root
+    |- RocksDB
+    |   |- RocksDB Installation Guide
+    |   |- RocksDB-HDFS Installation and Usage Guide
+    |   -- RocksJava Guide
+    |- HDFS
+        |- HDFS Pseudo Distributed setup
+        |- HDFS Usage guide
+        -- HDFS Fully Distributed guide
+```
+
+## Repository Plan
+While in the early stages of this repository, the primary concern will be to set up a proper and easy to use template for everyone to be able to use. The final goal is to have everything in Github Wiki rather than having work documents alone. An option with goog inter-operatibility is required. The current path for the repository is:
+
+1. Setup of Github Wiki
+2. Template formation (Word and Markdown)
+3. Uploading of initial documents
