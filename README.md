@@ -8,6 +8,7 @@ This repository is for documenting the different installations or implementation
 + [root](./)
     + [HDFS](./HDFS/)
         + [Full-Distirbuted Setup](./HDFS/HDFS%20Full-Distributed%20Setup.md)
+        + [Pseudo-Distirbuted Setup](./HDFS/HDFS%20Pseudo-Distributed%20Setup.md)
     + [RocksDB](./RocksDB/)
         + [RocksDB (HDFS Plugin)](./RocksDB/Rocksdb-HDFS%20Installation.md)
 
