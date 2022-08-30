@@ -23,15 +23,21 @@ The following steps need to be performed on all servers in the HDFS cluster.
 ### Configuring your hosts file
 The file /etc/hosts needs to be configured for machines in the cluster to be able to locate the other machines without using IP all the time. The master server needs to be able to ssh to itself and the slave servers and the slave servers need to ssh to themselves and the master server.
 1.	`nano /etc/hosts`
-2.	Update your file as per the requirement ![HDFS Hosts](./media/hdfs-hosts.png)
+2.	Update your file as per the requirement 
+    
+    ![HDFS Hosts](./media/hdfs-hosts.png)
 
 ### Passwordless connections to hosts
 For HDFS to work properly, we cannot have it asking for password every time one device will ssh to another. This requires us to set up authorized users on each of the machine.
 1.	This command generated an ssh key that can be used to access the machine without any password authentication: `ssh-keygen -t rsa -f ~/.ssh/id_rsa`
 2.	Next, copy the content you get from the command: 1`cat .ssh/id_rsa.pub`
-![RSA Key](./media/rsa-pub.png)
+
+    ![RSA Key](./media/rsa-pub.png)
+
 3.	You need to add this key to the list of authorized keys on every server, you can do this by opening the file using: `nano .ssh/authorized_keys` and then pasting the content you found in step 2. In the end, your authorized keys file should looks like the image below
-![Authorized Keys](./media/ssh-auth-hosts.png)
+
+    ![Authorized Keys](./media/ssh-auth-hosts.png)
+
 4.	You still need to add the servers to the known hosts. To do this you need to run: `ssh-keyscan -H <domain name as in hosts file>`, i.e. `ssh-keyscan -H hdfs-slave-1 >> ~/.ssh/known_hosts`. This needs to be done for all the servers on all the servers, a good idea would be to automate this process using a simple shell script that runs this command over and over for all hosts.
 5.	Try to ssh using only `ssh hdfs-slave-1` or `ssh hdfs-master`. It should work without any hiccups. 
 
@@ -40,7 +46,9 @@ For HDFS to work properly, we cannot have it asking for password every time one 
 Locate the JAVA_HOME line and add your java path to it. It most probably looks something like this: `export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64`
 2.	The {$HADOOP_HOME}/etc/hadoop/workers file
 Update the file to reflect your slave nodes as shown in the figure
-![HDFS workers file](./media/hdfs-workers.png)
+
+    ![HDFS workers file](./media/hdfs-workers.png)
+
 3.	The ${HADOOP_HOME}/etc/hadoop/core-site.xml file. Update the configuration as given below:
     ```
     <configuration>
@@ -76,7 +84,9 @@ The final few steps to having a completely set up HDFS system. You only need to 
     export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
     export PATH=$PATH:$HADOOP_HOME/bin
     ```
+
     ![bashrc](./media/hdfs-bashrc.png)
+    
 2. Run the `source ~/.bashrc` command once to run the bashrc file and have all your env variables now usable.
 3.	You can now format your namenodes using the command: hdfs namenode -format. 
 _Note: This step is to be done on the master server alone._
@@ -89,7 +99,8 @@ Your HDFS setup is now complete and the above steps need not be repeated. Now yo
 1.	To start the hdfs setup: `$(HADOOP_HOME)/sbin/start-dfs.sh` 
 2.	To stop the hdfs setup: `$(HADOOP_HOME)/sbin/stop-dfs.sh`
 3.	To check status of hdfs: `hdfs dfsadmin report`
-![HDFS status report](./media/hdfs-status.png) 
+
+    ![HDFS status report](./media/hdfs-status.png) 
 
 You can check the files on your setup by using other hdfs commands like:
 ```
