@@ -86,7 +86,7 @@ The final few steps to having a completely set up HDFS system. You only need to 
     ```
 
     ![bashrc](./media/hdfs-bashrc.png)
-    
+
 2. Run the `source ~/.bashrc` command once to run the bashrc file and have all your env variables now usable.
 3.	You can now format your namenodes using the command: hdfs namenode -format. 
 _Note: This step is to be done on the master server alone._
@@ -118,4 +118,7 @@ $	hdfs dfs -touch hdfs://hdfs-master:9000/test/file.txt
 $	hdfs dfs -rm -r hdfs://hdfs-master:9000/test
 ```
 
+---
 
+## Contributors
+1. Viraj Thakkar ([veedata](github.com/veedata))
