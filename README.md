@@ -3,7 +3,16 @@
 ## Purpose
 This repository is for documenting the different installations or implementations that have been performed in the ASU-IDI lab. The documents can vary from being installation guides to being usage or even maintainince guides. A more detailed document is always preferred, and in the future a standard template for all standard documents will be linked right here.
 
-## Tree
+# Table of Contents:
+
++ [root](./)
+    + [HDFS](./HDFS/)
+        + [Full-Distirbuted Setup](./HDFS/HDFS%20Full-Distributed%20Setup.md)
+    + [RocksDB](./RocksDB/)
+        + [RocksDB (HDFS Plugin)](./RocksDB/Rocksdb-HDFS%20Installation.md)
+
+
+## Contributing Guidelines
 Every documentation will have a parent folder that will classify it into its respective application. For example, the RocksDB folder can detail on the installation of rocksdb with different plugins or with java. The HDFS folder can have the installation and usage of HDFS instances and systems. 
 
 An example tree structure of the above:
