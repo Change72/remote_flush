@@ -35,7 +35,7 @@ Locate the JAVA_HOME line and add your java path to it. It most probably looks s
     <configuration>
         <property>
             <name>fs.defaultFS</name>
-            <value>hdfs://hdfs-master:9000</value>
+            <value>hdfs://hdfs-server:9000</value>
         </property>
     </configuration>
     ```
