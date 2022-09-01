@@ -6,7 +6,7 @@ This document is to show how to setup a pseudo-distributed HDFS system from scra
 
 ## Table of Contents
 
-+ [..](./../)
++ [parent](..)
 
 ----
 
