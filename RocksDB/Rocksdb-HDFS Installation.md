@@ -6,7 +6,7 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 
 ## Table of Contents
 
-+ [..](./../)
++ [parent](./../RocksDB/)
 
 ----
 

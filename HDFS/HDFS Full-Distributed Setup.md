@@ -6,7 +6,7 @@ This document is to show how to setup a fully-distributed HDFS system from scrat
 
 ## Table of Contents
 
-+ [..](./../)
++ [parent](./../HDFS/)
 
 ----
 

@@ -1,6 +1,6 @@
 # Table of Contents:
 
-+ [..](./../)
++ [parent](./../../setup-docs/)
 + [HDFS](./)
-    + [Full-Distirbuted Setup](./HDFS%20Full-Distributed%20Setup.md)
-    + [Pseudo-Distirbuted Setup](./HDFS/HDFS%20Pseudo-Distributed%20Setup.md)
+    + [Fully-Distirbuted Setup](./HDFS%20Full-Distributed%20Setup.md)
+    + [Pseudo-Distirbuted Setup](./HDFS%20Pseudo-Distributed%20Setup.md)
