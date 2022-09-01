@@ -89,17 +89,23 @@ This section also assumed that you have previsouly worked with rocksdb and know 
     Options options;
     options.env = hdfs.get();
     ```
-3. COnnecting the HDFS libraries to the rocksdb code. \ 
+3. Connecting the HDFS libraries to the rocksdb code. \ 
     In your Makefile, you need to include the libhdfs.so file as well, for this you need to add the following while compiling your code: 
     ```
     -I${HADOOP_HOME}/include -L${HADOOP_HOME}/lib/native -lhdfs
     ```
 
-You can also check out the example code (specailly if you do not understand the above) at the [asu-idi/rocksdb-hdfs repo](https://github.com/asu-idi/rocksdb-hdfs/tree/master/examples)
+> You can also check out the example code (specailly if you do not understand the above) at the [asu-idi/rocksdb-hdfs repo](https://github.com/asu-idi/rocksdb-hdfs/tree/master/examples)
 
 ### Running the examples
 
-> TO DO
+This part is optional, to assist in running the code for the first time. \ 
+Make sure that you have the `make_config.mk` file in the same directory where you will perform the following commands!
+
+1. Get the example code: `wget https://raw.githubusercontent.com/asu-idi/rocksdb-hdfs/master/examples/testhdfs.cc`
+2. Get the example Makefile: `wget https://raw.githubusercontent.com/asu-idi/rocksdb-hdfs/master/examples/Makefile`
+3. Run the `make testhdfs` command
+4. Check hdfs to verify that the folder with data has been created: `hdfs dfs -ls /test/rdb_hdfs`
 
 ---
 
