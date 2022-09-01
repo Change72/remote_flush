@@ -4,6 +4,12 @@ This document is to show how to setup a fully-distributed HDFS system from scrat
 
 ---
 
+## Table of Contents
+
++ [..](./../)
+
+----
+
 ## Definitions
 For this document, the following 3 servers are used.
 +	HDFS Master server: &emsp; 10.128.0.11 &emsp; hdfs-master

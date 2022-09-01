@@ -4,6 +4,12 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 
 ---
 
+## Table of Contents
+
++ [..](./../)
+
+----
+
 ## Setup
 We will go over the installation for HDFS, RocksDB and then RocksDB with HDFS. An additional section for Environment setup with some ease-of-life options will also be present but is optional. _In case of permission issues with any commands, try using the same command with `sudo` as the prefix._
 

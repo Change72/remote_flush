@@ -4,6 +4,12 @@ This document is to show how to setup a pseudo-distributed HDFS system from scra
 
 ---
 
+## Table of Contents
+
++ [..](./../)
+
+----
+
 ## Definitions
 For this document, we will assume the following server is being used.
 +	hdfs-server: &emsp; 10.128.0.11
