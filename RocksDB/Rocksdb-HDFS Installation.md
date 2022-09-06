@@ -86,7 +86,7 @@ This section also assumed that you have previsouly worked with rocksdb and know 
     #include "plugin/hdfs/env_hdfs.h"
     #include "hdfs.h"
     ```
-2. Connecting rocksdb to HDFS. \ 
+2. Connecting rocksdb to HDFS. \
     Add the following lines to the rocksdb code before you are creating the database, this will allow the library to understand that you are trying to connect to the HDFS environment
     ```
     std::unique_ptr<rocksdb::Env> hdfs;
@@ -95,7 +95,7 @@ This section also assumed that you have previsouly worked with rocksdb and know 
     Options options;
     options.env = hdfs.get();
     ```
-3. Connecting the HDFS libraries to the rocksdb code. \ 
+3. Connecting the HDFS libraries to the rocksdb code. \
     In your Makefile, you need to include the libhdfs.so file as well, for this you need to add the following while compiling your code: 
     ```
     -I${HADOOP_HOME}/include -L${HADOOP_HOME}/lib/native -lhdfs
@@ -105,7 +105,7 @@ This section also assumed that you have previsouly worked with rocksdb and know 
 
 ### Running the examples
 
-This part is optional, to assist in running the code for the first time. \ 
+This part is optional, to assist in running the code for the first time. \
 Make sure that you have the `make_config.mk` file in the same directory where you will perform the following commands!
 
 1. Get the example code: `wget https://raw.githubusercontent.com/asu-idi/rocksdb-hdfs/master/examples/testhdfs.cc`
