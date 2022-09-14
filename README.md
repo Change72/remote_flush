@@ -10,6 +10,7 @@ This repository is for documenting the different installations or implementation
         + [Full-Distirbuted Setup](./HDFS/HDFS%20Full-Distributed%20Setup.md)
         + [Pseudo-Distirbuted Setup](./HDFS/HDFS%20Pseudo-Distributed%20Setup.md)
     + [RocksDB](./RocksDB/)
+        + [RocksDB Docker Container](./RocksDB/Rocksdb-Docker.md)
         + [RocksDB (HDFS Plugin)](./RocksDB/Rocksdb-HDFS%20Installation.md)
 
 
