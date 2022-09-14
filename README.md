@@ -30,6 +30,8 @@ Root
         -- HDFS Fully Distributed guide
 ```
 
+There is a template made available to facilitate easier creation of documents that also does not skip any useful information! The format is quite flexible and you can use the sections that are most relevant to you. But do attempt to keep by the template as much as possible.
+
 ## Repository Plan
 While in the early stages of this repository, the primary concern will be to set up a proper and easy to use template for everyone to be able to use. The final goal is to have everything in Github Wiki rather than having work documents alone. An option with goog inter-operatibility is required. The current path for the repository is:
 
