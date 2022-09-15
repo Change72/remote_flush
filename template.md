@@ -13,7 +13,7 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 <!-- Make sure to break the documents down into multiple easy to follow parts --> -->
 + [parent (rocksdb)](./../RocksDB/)
 
-----
+---
 
 ## Definitions
 
@@ -71,6 +71,15 @@ Your HDFS setup is now complete and the above steps need not be repeated. Now yo
 
     ![HDFS status report](./HDFS/media/hdfs-status.png) 
 
+
+---
+
+## References
+
+<!-- Add references that you used while making the document -->
+<!-- This is more helpful when you yourself have to look at something else -->
+<!-- Or the reader wants to look something up 3 years in the future -->
+1. [The hadoop file options file](https://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
 
 ---
 
