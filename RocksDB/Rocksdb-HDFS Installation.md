@@ -8,7 +8,16 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 
 + [parent (rocksdb)](./../RocksDB/)
 
-----
+---
+
+## About
+
+Version of high-level software used:
++   RocksDB:    v7.4.5
++   Hadoop:     v3.3.1
++   Ubuntu:     20.04
+
+---
 
 ## Setup
 We will go over the installation of RocksDB with HDFS in this document. There are 2 methods to do it, the first being with HDFS running on the same server and the other being HDFS running on a different server. We will be going over both of these methods one after the other, you can choose which one you wish to follow. \
@@ -125,5 +134,20 @@ Make sure that you have the `make_config.mk` file in the same directory where yo
 
 ---
 
+## References
+
+1. [Original RocksDB-HDFS plugin](https://github.com/riversand963/rocksdb-hdfs-env)
+2. [GitHub Issue that throws a bone](https://github.com/facebook/rocksdb/issues/9997)
+
+---
+
+## Further Reading
+
+Some other concepts to explore:
+1. Kubernetes
+2. Connecting from one server to another on c++ using hostnames
+
+---
+
 ## Contributors
-1. Viraj Thakkar ([veedata](github.com/veedata))
+1. Viraj Thakkar [[github.com/veedata](https://github.com/veedata)] [[viraj.online@asu.edu](mailto:viraj.online@asu.edu)]

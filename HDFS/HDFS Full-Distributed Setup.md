@@ -10,7 +10,12 @@ This document is to show how to setup a fully-distributed HDFS system from scrat
 
 ----
 
-## Definitions
+## About
+
+Version of high-level software used:
++   Hadoop:     v3.3.1
++   Ubuntu:     20.04
+
 For this document, the following 3 servers are used.
 +	HDFS Master server: &emsp; 10.128.0.11 &emsp; hdfs-master
 +	HDFS Slave server 1: &emsp; 10.128.0.12	&emsp; hdfs-slave-1
@@ -126,5 +131,20 @@ $	hdfs dfs -rm -r hdfs://hdfs-master:9000/test
 
 ---
 
+## References
+
+1. [HDFS Fully Distibuted installation sorta-guide](https://medium.com/@wilcoln/how-to-install-hadoop-on-a-real-cluster-fully-distributed-mode-7c3bc3fa7d7e)
+2. [HDFS default settings (hdfs-core)](https://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
+3. Stack Overflow - just the entire community
+
+---
+
+## Further Reading
+
+Some other concepts to explore:
+1. Kubernetes. 
+
+---
+
 ## Contributors
-1. Viraj Thakkar ([veedata](github.com/veedata))
+1. Viraj Thakkar [[github.com/veedata](https://github.com/veedata)] [[viraj.online@asu.edu](mailto:viraj.online@asu.edu)]

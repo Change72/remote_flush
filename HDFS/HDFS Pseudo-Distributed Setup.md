@@ -10,7 +10,12 @@ This document is to show how to setup a pseudo-distributed HDFS system from scra
 
 ----
 
-## Definitions
+## About
+
+Version of high-level software used:
++   Hadoop:     v3.3.1
++   Ubuntu:     20.04
+
 For this document, we will assume the following server is being used.
 +	hdfs-server: &emsp; 10.128.0.11
 
@@ -106,5 +111,23 @@ $	hdfs dfs -rm -r hdfs://hdfs-server:9000/test            (or) hdfs dfs -rm -r h
 
 ---
 
+## References
+
+1. [HDFS Pseudo Distibuted installation guide 1](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html)
+2. [HDFS Pseudo Distibuted installation guide 2](https://kontext.tech/article/445/install-hadoop-330-on-windows-10-using-wsl)
+3. [HDFS default settings (hdfs-core)](https://hadoop.apache.org/docs/r3.3.1/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml)
+4. Stack Overflow - just the entire community
+
+---
+
+## Further Reading
+
+Some other concepts to explore:
+1. Just go for the Fully-Distributed setup. It is stunning
+2. Docker docker docker!
+
+
+---
+
 ## Contributors
-1. Viraj Thakkar ([veedata](github.com/veedata))
+1. Viraj Thakkar [[github.com/veedata](https://github.com/veedata)] [[viraj.online@asu.edu](mailto:viraj.online@asu.edu)]

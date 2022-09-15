@@ -15,10 +15,18 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 
 ---
 
-## Definitions
+## About <!-- Maybe About Setup makes more sense as the title but it felt out of place -->
 
-<!-- Some non-trivial terms or definitions unique to asu-idi that are going to be used in the document -->
+<!-- A small paragraph before the document starts (Optional) -->
+<!-- Follow it with the different versions of the high-level tech parts you use in the document -->
+<!-- Finally, Some non-trivial terms or definitions unique to asu-idi that are going to be used in the document -->
 <!-- Do not populate it with definitions of terms like HDFS, DBs or SSDs. You can link web resources to those in the Pre-requisites section -->
+High-level Software Version:
++   RocksDB:    v7.4.5
++   Hadoop:     v3.3.1
++   Ubuntu:     20.04
+
+
 For this document, the following is how we reference servers.
 +	HDFS Master server: &emsp; 10.128.0.11 &emsp; hdfs-master
 +   HDFS Slave-1 server: &emsp; 10.218.0.12 &emsp; hdfs-slave-1
@@ -86,7 +94,6 @@ Your HDFS setup is now complete and the above steps need not be repeated. Now yo
 ## Further Reading
 
 <!-- What's next, some future work you wanted to read into in the given topic and couldn't -->
-<!--  -->
 <!-- or just something that is an interesting read or motivational after the day of work -->
 <!-- You can have your fun with this section, even link [YouTube videos](https://www.youtube.com/watch?v=dQw4w9WgXcQ) -->
 

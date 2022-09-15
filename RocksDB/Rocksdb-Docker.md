@@ -1,3 +1,5 @@
+<!-- Document under construction - needs a lot of work -->
+
 # RocksDB-Docker: An Installation and Usage guide
 
 This document is to show how to use the RocksDB container present at [veedata/docker-rocksdb](https://github.com/veedata/docker-rocksdb). 
@@ -48,4 +50,4 @@ The better option, although it is more time and resource consuming
 ---
 
 ## Contributors
-1. Viraj Thakkar ([veedata](github.com/veedata))
+1. Viraj Thakkar [[github.com/veedata](https://github.com/veedata)] [[viraj.online@asu.edu](mailto:viraj.online@asu.edu)]
