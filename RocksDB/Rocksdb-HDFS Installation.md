@@ -11,18 +11,22 @@ This document is to show how to setup RocksDB with the HDFS plugin enabled and h
 ----
 
 ## Setup
-We will go over the installation for HDFS, RocksDB and then RocksDB with HDFS. An additional section for Environment setup with some ease-of-life options will also be present but is optional. _In case of permission issues with any commands, try using the same command with `sudo` as the prefix._
+We will go over the installation of RocksDB with HDFS in this document. There are 2 methods to do it, the first being with HDFS running on the same server and the other being HDFS running on a different server. We will be going over both of these methods one after the other, you can choose which one you wish to follow. \
+An additional section for Environment setup with some ease-of-life options will also be present but is optional. _In case of permission issues with any commands, try using the same command with `sudo` as the prefix._
 
-### HDFS
-This document will not be showing how to setup a HDFS environment, it will only go through the downloading and unzipping since some of the files from the HDFS directories are required by the HDFS plugin in RocksDB. \
-For Installation and setup of HDFS, please check: [HDFS](./../HDFS/)
+### HDFS on a different server
+
+This part of the document is if you have HDFS set on a different server and rocksdb on a different one. 
+
+#### HDFS
+Even though you have HDFS set up on a different server, the archives are still needed by RocksDB in order to get everything up and running. This document will not be showing how to setup a HDFS environment, it will only go through the downloading and unzipping to access the required files. \
 
 1.	Downloading Hadoop v3.3.1 files: `wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz -O hadoop.tar.gz`
 2.  Creating a directorhy for hadoop to be in: `mkdir hadoop`
 3.	Untar the files into the newly created directory: `tar -xzf hadoop.tar.gz -C hadoop`
 4.  Move all the files down 1 directory: `mv ./hadoop/hadoop-3.3.1/* ./hadoop/`
 
-### RocksDB
+#### RocksDB
 This section will deal with the installation of RocksDB with the HDFS plugin
 
 1. Install dependencies that will be requrired for the rocksdb: `sudo apt-get install -y openjdk-8-jdk libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev build-essential`
@@ -31,7 +35,7 @@ This section will deal with the installation of RocksDB with the HDFS plugin
 4. Untar the file: `tar -xzf rocksdb.tar.gz -C ./rocksdb`
 5. Move the files down 1 directory: `mv ./rocksdb/rocksdb-7.4.5/* ./rocksdb/`
 
-### HDFS Plugin
+#### HDFS Plugin
 > Note: If you are going to perform `make install`, you will need admin priviledges. Better to do `sudo su` and run the below commands. 
 
 1. Setup some environment variables:
@@ -49,6 +53,12 @@ This section will deal with the installation of RocksDB with the HDFS plugin
 2.  Browse inside the plugin directory of rocksdb: `cd rocksdb/plugin/`
 3.  Clone the hdfs plugin repository: `git clone https://github.com/asu-idi/rocksdb-hdfs hdfs && cd ..` 
 4.  Perform a make clean and then your required make configuration (install used for this example): `make clean && DEBUG_LEVEL=0 ROCKSDB_PLUGINS="hdfs" make -j$(nproc) install`
+
+
+### HDFS on the same server
+You will need to install HDFS and get it up and running before moving forward in this section. For Installation and setup of HDFS, please check: [HDFS](./../HDFS/). It is most likely that you are using the Pseudo-distributed version and we will work under the same assumption (it does not make any difference if you are using fully-distributed version as well) \
+Once you complete installing and setting up HDFS, you can follow the steps from the sub-section of "RocksDB" under "HDFS on a different server".
+
 
 ### Wrapping up
 1.	Setup the following Environment variables in your .bashrc file for easier access to the commands everytime you use your machine.
