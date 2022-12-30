@@ -12,6 +12,7 @@ This repository is for documenting the different installations or implementation
     + [RocksDB](./RocksDB/)
         + [RocksDB Docker Container](./RocksDB/Rocksdb-Docker.md)
         + [RocksDB (HDFS Plugin)](./RocksDB/Rocksdb-HDFS%20Installation.md)
+        + [YCSB-Benchmarking (Normal)](./RocksDB/YCSB-Benchmarking.md)
 
 
 ## Contributing Guidelines
