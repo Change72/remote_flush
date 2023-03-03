@@ -6,7 +6,7 @@ Some changes need to be made to allow for perfect YCSB compatibility. This docum
 
 ## Table of Contents
 
-+ [parent (rocksdb)](./../YCSB/)
++ [parent (ycsb)](./../YCSB/)
 
 ---
 

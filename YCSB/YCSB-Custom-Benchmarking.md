@@ -6,7 +6,7 @@ Make your Custom RocksDB code run with YCSB. This document goes over the same in
 
 ## Table of Contents
 
-+ [parent (rocksdb)](./../YCSB/)
++ [parent (ycsb)](./../YCSB/)
 
 ---
 
